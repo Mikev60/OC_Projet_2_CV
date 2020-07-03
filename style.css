@@ -1,0 +1,66 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #CFD8DC;
+}
+
+.contenant, .header{
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  margin:auto;
+}
+.photo img {
+  border-radius: 63px;
+  margin: auto;
+}
+.side-bar{
+  background-color: #90CAF9;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.side-bar h2{
+  background-color: #424242;
+  color: #90CAF9;
+  text-align: center;
+}
+.main-content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex:2;
+}
+.loisirs {
+  margin-top : auto;
+}
+.contact div {
+  display: flex;
+  padding-left: 1rem;
+  margin-right: 1rem;;
+}
+.contact div p:nth-child(1n+0)
+{
+  flex: 1;
+}
+.contact div p:nth-child(2n+0)
+{
+  flex: 2;
+}
+
+@media all and (max-width: 1440px)
+{
+  .contenant, .header{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .header div:nth-child(1n+0)
+  {
+    order: 2;
+  }
+  .header div:nth-child(2n+0)
+  {
+    order: 1;
+  }
+}
