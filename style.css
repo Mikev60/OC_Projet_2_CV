@@ -4,15 +4,13 @@ html, body {
   background-color: #CFD8DC;
 }
 
+/* -------------------------------- Gestion des blocs ----------------- */
 .contenant, .header{
   display: flex;
   flex-direction: row;
   width: 60vw;
   margin:auto;
-}
-.photo img {
-  border-radius: 63px;
-  margin: auto;
+  box-sizing: border-box;
 }
 .side-bar{
   background-color: #90CAF9;
@@ -20,35 +18,95 @@ html, body {
   flex-direction: column;
   flex: 1;
 }
-.side-bar h2{
-  background-color: #424242;
-  color: #90CAF9;
-  text-align: center;
-}
 .main-content {
   background-color: white;
   display: flex;
   flex-direction: column;
   flex:2;
+  padding: 2rem;
+  justify-content: center;
 }
-.loisirs {
-  margin-top : auto;
+/* ------------------------------------ Header -----------------------------*/
+header p{
+  margin-block-start: 0;
 }
-.contact div {
-  display: flex;
-  padding-left: 1rem;
-  margin-right: 1rem;;
+header h1{
+  margin-block-end:0.2rem;
 }
-.contact div p:nth-child(1n+0)
-{
-  flex: 1;
-}
-.contact div p:nth-child(2n+0)
-{
-  flex: 2;
+/* ----------------------------------- Side-bar ---------------------------*/
+.photo img {
+  border-radius: 63px;
+  margin: auto;
 }
 
-@media all and (max-width: 1440px)
+.side-bar h2{
+  background-color: #424242;
+  color: #90CAF9;
+  text-align: center;
+}
+
+.loisirs {
+  margin-top : auto;
+  text-align: center;
+}
+.loisirs img {
+  width: 3rem;
+  height: 3rem;
+}
+.apropos p{
+  text-align: justify;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.contact p{
+  padding-left: 2rem;
+  margin-right: 1rem;
+  font-style: normal;
+}
+
+/* ------------------------------------ Main-content -------------------- */
+.main-content h2 {
+  border-bottom : 2px solid #90CAF9;
+}
+.titre-formation {
+  background-image: url('Images/formation.svg');
+}
+.titre-experience {
+  background-image: url('Images/experience.svg');
+}
+.titre-recommandations {
+  background-image: url('Images/recommandations.svg');
+}
+.titre-formation, .titre-experience, .titre-recommandations {
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 2rem;
+  font-size: 2rem;
+  padding-left: 3rem;
+}
+.formation div, .experience div {
+  display: flex;
+}
+.enTete{
+  flex:2;
+  align-items: center;
+}
+.enTete p {
+  display:inline;
+  margin:auto;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex:4;
+}
+.description p{
+  margin-block-end:0;
+}
+
+/* --------------------------------------- Responsive ---------------------------------*/
+@media all and (max-width: 1050px)
 {
   .contenant, .header{
     display: flex;
