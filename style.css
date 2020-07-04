@@ -3,6 +3,28 @@ html, body {
   padding: 0;
   background-color: #CFD8DC;
 }
+body{
+  width: 60vw;
+  display:grid;
+  margin:auto;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+  "photo header"
+  "aside contenu";
+}
+/* Mise en place grid */
+#photo{
+  grid-area: photo;
+}
+#titreNom {
+  grid-area: header;
+}
+#sideBar {
+  grid-area:aside;
+}
+#contenuCV {
+  grid-area: contenu;
+}
 @font-face {
   font-family: 'PoliceCV';
   src:url('abel-regular.ttf');
@@ -14,40 +36,31 @@ html, body {
 
 /* -------------------------------- Gestion des blocs ----------------- */
 .contenant, .header{
-  display: flex;
-  flex-direction: row;
-  width: 60vw;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  width: 100%;
   margin:auto;
-  box-sizing: border-box;
 }
 .side-bar{
   background-color: #90CAF9;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  /*flex: 1;*/
   padding-bottom: 1rem;
 }
 .main-content {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex:2;
+  /*flex:2;*/
   padding: 2rem;
   justify-content: center;
 }
-/* ------------------------------------ Header -----------------------------*/
-header p{
-  margin-block-start: 0;
-}
-header h1{
-  margin-block-end:0.2rem;
-}
 /* ----------------------------------- Side-bar ---------------------------*/
 .photo img {
-  border-radius: 63px;
+  border-radius: 100%;
   margin: auto;
 }
-
 .side-bar h2{
   background-color: #424242;
   color: #90CAF9;
@@ -130,7 +143,7 @@ header h1{
 }
 .enTete p {
   display:inline;
-  margin:auto;
+  margin-bottom: auto;
 }
 .description {
   display: flex;
@@ -139,7 +152,7 @@ header h1{
   flex:4;
 }
 .description p{
-  margin-block-end:0;
+  /*margin-block-end:0;*/
   line-height: 1.5rem;
 }
 .recommandations {
@@ -150,22 +163,43 @@ header h1{
 /* --------------------------------------- Responsive ---------------------------------*/
 @media all and (max-width: 1050px)
 {
+  body {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .photo{
+    padding-top:1rem;
+  }
   .contenant, .header{
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
   }
   .main-content h1,.situation {
     text-align: center;
   }
-  .header div:nth-child(1n+0)
-  {
-    order: 2;
+  #titreNom{
+    order: 1;
     padding-top: 1rem;
   }
-  .header div:nth-child(2n+0)
-  {
-    order: 1;
+  #photo{
+    order: 2;
+  }
+  #contenuCV{
+    order:3;
+  }
+  #sideBar {
+    order: 4;
+  }
+  .apropos {
+    order:1;
+  }
+  .loisirs{
+    order:2;
+  }
+  .contact{
+    order:3;
   }
   .contactBlock {
     display:flex;

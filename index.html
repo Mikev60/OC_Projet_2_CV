@@ -3,23 +3,22 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1f507cedc6.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mickael VERMAND</title>
   </head>
   <body>
-      <header class="header">
-        <div class="side-bar photo">
+        <div id="photo" class="side-bar photo">
           <img src="Images/photocv.png" alt="Photo Mickael VERMAND" title="Photo Mickael VERMAND">
         </div>
-        <div class="main-content">
+        <div id="titreNom" class="main-content">
           <h1><span class="nom">Mickael</span> VERMAND</h1>
           <span class="situation"><span class="underline">Dével</span>oppeur WEB en formation</span>
         </div>
-      </header>
-        <div class="contenant">
-      <aside class="side-bar"> <!-- Infos (photo, contact, loisirs et à propos -->
+      <aside id="sideBar" class="side-bar"> <!-- Infos (photo, contact, loisirs et à propos -->
+      <section class="contact">
+        <h2>Contact</h2>
         <address class="contact">
-          <h2>Contact</h2>
           <div class="contactBlock">
             <div>
               <p>Email<br/>
@@ -39,6 +38,7 @@
             </div>
           </div>
         </address>
+      </section>
         <div class="apropos">
           <h2>A propos</h2>
           <p>En pleine reconversion professionnelle, je suis toujours à la recherche de nouveaux challenges pour améliorer mes compétences et en acquérir de nouvelles. Fort de mon expérience au sein de l'industrie automobile, aéronautique ou de la logistique, je suis capable de mettre en place des méthodes de travail efficaces orientées satisfaction client aussi vite que possible. </p>
@@ -50,11 +50,13 @@
           <img src="Images/3dmodel.svg" alt="Modélisation 3D" title="Modélisation 3D">
         </div>
       </aside>
-      <main class="main-content"> <!-- Corps : expériences, formations, recommandations -->
+      <main id="contenuCV" class="main-content"> <!-- Corps : expériences, formations, recommandations -->
         <section class="formation">
           <h2 class="titre-formation">Formation</h2>
-          <div>
-            <div class="enTete"><p>2020 - En cours</p></div>
+        <ul>
+          <li>
+            <div>
+            <div class="enTete"><p>2020 - En cours <br /> Paris (75)</p></div>
             <div class="description" ><p><span class="titrePoste">Openclassrooms</span><br /> Formation de développeur WEB <br /> Formation à distance permettant de devenir développeur WEB :</p>
             <ul>
               <li>Compétences de bases de programmation du WEB : HTML5 et CSS3</li>
@@ -62,9 +64,10 @@
               <li>Full-stack : Node.js, Express, MongoDB</li>
               <li>Vue.js</li>
             </ul></div>
-          </div>
-          <div>
-            <div class="enTete"><p>2013 - 2016</p></div>
+          </div></li>
+          <li>
+            <div>
+            <div class="enTete"><p>2013 - 2016 <br  />Nancy (54)</p></div>
             <div class="description" ><p><span class="titrePoste">Ecole Nationale Supérieure des Mines de Nancy </span><br /> Formation Ingénieur Matériaux et Gestion de production <br />
               Formation d'ingénieur en 3 ans, alterné 6mois école/stage : </p>
               <ul>
@@ -73,12 +76,15 @@
                 <li>Gestion de la supply-chain </li>
                 <li>Management de l'amélioration continue : LEAN, TOC</li>
               </ul></div>
-          </div>
+          </div></li>
+        </ul>
         </section>
         <section class="experience">
           <h2 class = "titre-experience ">Expérience</h2>
+          <ul>
+            <li>
           <div>
-            <div class="enTete"><p>Mars 2019 - Aujourd'hui</p></div>
+            <div class="enTete"><p>Mars 2019 - Aujourd'hui <br/>Grigny (91)</p></div>
             <div class="description" >
               <p><span class="titrePoste">Coca-Cola </span><br /> Chef d'équipe production <br/>
                Gestion ligne production des bouteilles 1,25L : </p>
@@ -96,9 +102,9 @@
                 d’amélioration continue</li>
               </ul>
             </div>
-          </div>
-          <div>
-            <div class="enTete"><p>Octobre 2018 - Mars 2019</p></div>
+          </div></li>
+          <li><div>
+            <div class="enTete"><p>Octobre 2018 - Mars 2019 <br  />Saran(45)</p></div>
             <div class="description" ><p><span class="titrePoste">Amazon </span><br /> Area Manager </p>
               <ul>
                 <li>Gestion d’une équipe allant de 70 à 130 personnes</li>
@@ -111,9 +117,9 @@
                 l’entreprise</li>
               </ul>
             </div>
-          </div>
-          <div>
-            <div class="enTete"><p>Mars 2017 - Octobre 2018</p></div>
+          </div></li>
+          <li><div>
+            <div class="enTete"><p>Mars 2017 - Octobre 2018 <br />Rochester(USA)</p></div>
             <div class="description" ><p><span class="titrePoste">Albany Safran composites </span><br /> Ingénieur amélioration continue </p>
             <ul>
               <li>Liaison amélioration continue entre usine française et
@@ -125,7 +131,8 @@
               Lean/ Théorie des contraintes, support à la production</li>
             </ul>
           </div>
-          </div>
+        </div></li>
+        </ul>
         </section>
         <section>
           <h2 class="titre-recommandations" >Recommandations</h2>
