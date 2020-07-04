@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/1f507cedc6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mickael VERMAND</title>
   </head>
   <body>
@@ -12,22 +12,32 @@
           <img src="Images/photocv.png" alt="Photo Mickael VERMAND" title="Photo Mickael VERMAND">
         </div>
         <div class="main-content">
-          <h1>Mickael VERMAND</h1>
-          <p>Développeur WEB en formation</p>
+          <h1><span class="nom">Mickael</span> VERMAND</h1>
+          <span class="situation"><span class="underline">Dével</span>oppeur WEB en formation</span>
         </div>
       </header>
         <div class="contenant">
       <aside class="side-bar"> <!-- Infos (photo, contact, loisirs et à propos -->
         <address class="contact">
           <h2>Contact</h2>
-            <p>Email<br/>
-            Mickael.vermand@gmail.com</p>
-            <p>Tel.<br/>
-            06.33.49.38.34</p>
-            <p>Skype <br/>
-            Mikev60</p>
-            <p>Github<br/>
-            <a href="https://mikev60.github.io/" >Mikev60</a></p>
+          <div class="contactBlock">
+            <div>
+              <p>Email<br/>
+              Mickael.vermand@gmail.com</p>
+            </div>
+            <div>
+              <p>Tel.<br/>
+              06.33.49.38.34</p>
+            </div>
+            <div>
+              <p>Skype <br/>
+              Mikev60</p>
+            </div>
+            <div>
+              <p>Github<br/>
+              <a href="https://mikev60.github.io/" >Mikev60</a></p>
+            </div>
+          </div>
         </address>
         <div class="apropos">
           <h2>A propos</h2>
@@ -37,7 +47,7 @@
           <h2>Loisirs</h2>
           <img src="Images/running.svg" alt="Running / Trail" title="Running / Trail">
           <img src="Images/plongee.svg" alt="Plongée" title="Plongée">
-          <img src="Images/unity.svg" alt="Unity" title="Unity">
+          <img src="Images/3dmodel.svg" alt="Modélisation 3D" title="Modélisation 3D">
         </div>
       </aside>
       <main class="main-content"> <!-- Corps : expériences, formations, recommandations -->
@@ -45,7 +55,7 @@
           <h2 class="titre-formation">Formation</h2>
           <div>
             <div class="enTete"><p>2020 - En cours</p></div>
-            <div class="description" ><p>Openclassrooms <br /> Formation de développeur WEB <br /> Formation à distance permettant de devenir développeur WEB :</p>
+            <div class="description" ><p><span class="titrePoste">Openclassrooms</span><br /> Formation de développeur WEB <br /> Formation à distance permettant de devenir développeur WEB :</p>
             <ul>
               <li>Compétences de bases de programmation du WEB : HTML5 et CSS3</li>
               <li>Javascript</li>
@@ -55,7 +65,7 @@
           </div>
           <div>
             <div class="enTete"><p>2013 - 2016</p></div>
-            <div class="description" ><p>Ecole Nationale Supérieure des Mines de Nancy <br /> Formation Ingénieur Matériaux et Gestion de production <br />
+            <div class="description" ><p><span class="titrePoste">Ecole Nationale Supérieure des Mines de Nancy </span><br /> Formation Ingénieur Matériaux et Gestion de production <br />
               Formation d'ingénieur en 3 ans, alterné 6mois école/stage : </p>
               <ul>
                 <li>Science des matériaux : métaux, céramiques, verres, polymères</li>
@@ -70,7 +80,7 @@
           <div>
             <div class="enTete"><p>Mars 2019 - Aujourd'hui</p></div>
             <div class="description" >
-              <p>Coca-Cola <br /> Chef d'équipe production <br/>
+              <p><span class="titrePoste">Coca-Cola </span><br /> Chef d'équipe production <br/>
                Gestion ligne production des bouteilles 1,25L : </p>
               <ul>
                 <li>Encadrement d’une équipe de 12 personnes</li>
@@ -89,7 +99,7 @@
           </div>
           <div>
             <div class="enTete"><p>Octobre 2018 - Mars 2019</p></div>
-            <div class="description" ><p>Amazon <br /> Area Manager </p>
+            <div class="description" ><p><span class="titrePoste">Amazon </span><br /> Area Manager </p>
               <ul>
                 <li>Gestion d’une équipe allant de 70 à 130 personnes</li>
                 <li>Affectation des tâches en fonction du planning</li>
@@ -104,7 +114,7 @@
           </div>
           <div>
             <div class="enTete"><p>Mars 2017 - Octobre 2018</p></div>
-            <div class="description" ><p>Albany Safran composites <br /> Ingénieur amélioration continue </p>
+            <div class="description" ><p><span class="titrePoste">Albany Safran composites </span><br /> Ingénieur amélioration continue </p>
             <ul>
               <li>Liaison amélioration continue entre usine française et
               américaine : création et mise en place du système
@@ -119,8 +129,10 @@
         </section>
         <section>
           <h2 class="titre-recommandations" >Recommandations</h2>
-          <p>Nom prénom</p>
-          <p>Détail de la recommandation</p>
+          <div class="recommandations">
+            <p>Sébastien DUPONT <br /> Responsable production, Coca-Cola <br /> Email : sebastien.dupont@coca.fr </p>
+            <p>Jean-Pierre CATEL <br /> Responsable production, Albany Safran Composites <br /> Email : jeanp.catel@leaproject.com </p>
+          </div>
         </section>
       </main>
   </body>
