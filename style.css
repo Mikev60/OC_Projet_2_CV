@@ -131,7 +131,7 @@ a {
   position: absolute;
   left:0;
 }
-.titre-recommandations:after {
+.titre-recommandations:before {
   content: "\f303";
   color: black;
   font-family: FontAwesome;
@@ -237,5 +237,12 @@ a {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .liNormal div, .liActuel div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .recommandations {
+    flex-direction: column;
   }
 }
