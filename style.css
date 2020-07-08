@@ -245,4 +245,7 @@ a {
   .recommandations {
     flex-direction: column;
   }
+  .titre-recommandations {
+    font-size: 1.7rem;
+  }
 }
